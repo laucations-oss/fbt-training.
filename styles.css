@@ -287,3 +287,19 @@ body:not(.home-page) .nav {background:transparent;}
 a.staff-card{text-decoration:none;cursor:pointer;}a.staff-card:hover,a.staff-card:focus-visible{outline:2px solid #c90000;outline-offset:3px;}
 
 button.contact-method{border:0;background:none;font-family:inherit;cursor:pointer;text-align:left;width:100%;padding:0;}
+
+/* Scrolling stability test */
+html {
+  overflow-y: auto;
+  height: auto;
+}
+
+body {
+  overflow-y: auto;
+  height: auto;
+  min-height: 100vh;
+}
+
+.body-shell {
+  overflow: visible;
+}
