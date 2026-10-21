@@ -1,0 +1,289 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@300;400&family=Inter:wght@400;500;600;700&display=swap');
+:root{--red:#c90000}*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:#000;color:white;font-family:Inter,Arial,sans-serif}.topbar{height:163px;background:#000;display:flex;align-items:flex-start;justify-content:space-between;padding:46px 6.8% 0 7.25%;position:relative;z-index:3}.top-left{display:flex;gap:16px;align-items:center;padding-top:17px}.menu-toggle{border:0;background:none;width:32px;height:22px;display:flex;flex-direction:column;justify-content:space-between;padding:0;cursor:pointer}.menu-toggle span{display:block;width:32px;height:2px;background:white}.home-link{font-size:18px;font-weight:700;color:#d20a0a;text-decoration:none}.logo{width:225px;height:68px;overflow:hidden;display:block}.logo img{width:225px;height:auto;display:block;mix-blend-mode:screen}.body-shell{display:grid;grid-template-columns:24% minmax(0,1fr);background:#0b0b0b url('assets/architecture.jpg') left top / 100% auto repeat-y;min-height:590px}.nav{padding:40px 0 20px 40px}.nav nav{display:flex;flex-direction:column;gap:36px;position:sticky;top:30px}.nav a{font-size:30px;line-height:1.35;color:#fff;text-decoration:none;white-space:nowrap}.nav a.active,.nav a:hover{color:#dc1111}.main{min-width:0}.feature{position:relative;min-height:555px;padding:76px 0 0 0;overflow:hidden}.feature-copy{position:relative;z-index:1;width:60%;max-width:690px}.mini-brand{font-size:92px;line-height:95px;font-weight:900;letter-spacing:-12px;transform:scaleX(1.25);transform-origin:left;width:100px}.feature h1{font-family:'Barlow Condensed','Arial Narrow',sans-serif;font-weight:300;font-size:84px;line-height:1.06;margin:5px 0 0;letter-spacing:-1.5px}.red-rule{height:2px;background:#d00000;width:calc(100% + 230px);margin:8px 0 9px}.feature h2{font-size:25px;font-weight:400;margin:0 0 32px}.feature p{font-size:20px;line-height:1.52;max-width:660px;margin:0 0 29px}.connect{border:0;background:none;color:#fff;font:700 20px Inter,Arial,sans-serif;padding:0;cursor:pointer;text-align:left}.connect:hover{text-decoration:underline}.sheena{position:absolute;right:7.8%;top:68px;width:42%;max-width:540px;aspect-ratio:578/559;object-fit:contain;z-index:0}.next-story{padding:0 7% 50px 0;max-width:1000px}.next-story h2{font:300 clamp(75px,9vw,145px)/1 'Barlow Condensed','Arial Narrow',sans-serif;color:#c90000;letter-spacing:14px;margin:0 0 18px}.next-story p{font-size:25px;line-height:1.45;margin:0 0 34px}footer{height:145px;background:#000;display:flex;align-items:flex-end;justify-content:flex-end;padding:0 7% 35px}footer div{display:flex;gap:16px;align-items:center}footer a,footer button{color:#fff;background:none;border:0;font-size:36px;line-height:1;text-decoration:none;cursor:pointer}.overlay{position:fixed;inset:0;background:rgba(0,0,0,.75);display:grid;place-items:center;z-index:10;padding:20px}.overlay[hidden]{display:none}.dialog{position:relative;width:min(772px,100%);min-height:444px;background:#fffafa;color:#080808;padding:25px 27px;box-shadow:0 20px 80px #0008}.dialog h2{font-size:39px;font-weight:400;margin:0;border-bottom:1px solid #555;padding-bottom:8px}.dialog textarea{width:100%;height:265px;resize:vertical;border:0;outline:0;background:transparent;padding:20px 0;font:21px 'Courier New',monospace;color:#111}.dialog textarea::placeholder{color:#111;opacity:1}.close{position:absolute;right:12px;top:7px;background:none;border:0;font-size:29px;cursor:pointer}.dialog-actions{display:flex;align-items:center;justify-content:space-between;gap:10px}.dialog-actions button{background:#c90000;color:white;border:0;padding:11px 18px;cursor:pointer;font-weight:600}.sr-only{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0,0,0,0)}@media(max-width:1000px){.body-shell{grid-template-columns:250px minmax(0,1fr)}.nav a{font-size:24px}.nav{padding-left:25px}.feature{padding-top:50px}.feature h1{font-size:70px}.feature-copy{width:72%}.sheena{right:0;opacity:.75}.feature p{font-size:18px}}@media(max-width:700px){.topbar{height:105px;padding:25px 22px}.logo,.logo img{width:155px}.body-shell{display:block;background-size:auto 100%}.nav{display:none;padding:20px 25px;background:#070707}.nav.open{display:block}.nav nav{gap:15px}.nav a{font-size:22px}.feature{min-height:720px;padding:35px 22px 0}.feature-copy{width:100%;max-width:none}.mini-brand{font-size:60px;line-height:70px}.feature h1{font-size:70px}.red-rule{width:100%}.feature h2{font-size:20px}.feature p{font-size:17px;max-width:95%}.sheena{top:auto;bottom:0;right:0;width:78%;opacity:.9}.connect{font-size:17px}.next-story{padding:25px 22px}.next-story h2{letter-spacing:5px}.next-story p{font-size:19px}footer{height:90px}.dialog{min-height:350px}.dialog h2{font-size:30px}.dialog textarea{height:210px}}
+/* Brand asset and footer corrections */
+.logo{width:234px;height:90px;overflow:visible;flex-shrink:0}.logo img{width:234px;height:90px;object-fit:contain;mix-blend-mode:normal}.mini-brand{width:190px;height:110px;overflow:hidden;font-size:initial;line-height:normal;letter-spacing:normal;transform:none}.mini-brand img{display:block;width:468px;height:180px;max-width:none;object-fit:fill}.mini-brand img{transform:translate(0,-2px)}footer a{display:inline-flex;align-items:center;justify-content:center;width:40px;height:38px}footer a svg{display:block;width:34px;height:34px;fill:none;stroke:#fff;stroke-width:1.9;stroke-linejoin:round;stroke-linecap:round}footer a:nth-child(2) svg{width:39px;height:30px}footer a:hover svg{stroke:#d20a0a}@media(max-width:700px){.logo{width:155px;height:60px}.logo img{width:155px;height:60px}.mini-brand{width:140px;height:83px}.mini-brand img{width:346px;height:133px}}
+
+/* Refined transparent symbol */
+.mini-brand{width:190px;height:110px;display:flex;align-items:center;overflow:visible}
+.mini-brand img{width:190px;height:auto;max-width:100%;object-fit:contain;transform:none;display:block}
+@media(max-width:700px){.mini-brand{width:140px;height:83px}.mini-brand img{width:140px;height:auto}}
+
+/* Latest News: continuous article sequence */
+.theatre-story{padding:99px 7% 0 6px;min-height:475px}
+.theatre-story h2{font-size:24px;line-height:1.25;font-weight:750;margin:0;max-width:950px}
+.story-rule{height:3px;width:min(720px,100%);background:var(--red);margin:9px 0 10px}
+.theatre-story p{font-size:25px;line-height:1.4;margin:0 0 18px;max-width:1150px}
+.theatre-story .story-date{margin-bottom:15px}
+.feature{padding-top:12px;min-height:560px}
+.next-story{padding-top:0;padding-bottom:32px;max-width:none}
+.next-story h2{font-size:clamp(90px,9vw,145px)}
+.carpark-layout{display:grid;grid-template-columns:minmax(0,1fr) 260px;gap:35px;align-items:start}
+.carpark-copy p{max-width:750px}.carpark-layout .plan{width:100%;height:auto;object-fit:contain;margin-top:12px;background:white}
+.staff-card{display:inline-flex;align-items:center;gap:10px;background:#fff;color:#222;border-radius:12px;padding:8px 14px;margin:0 0 30px;min-width:195px}
+.staff-avatar{display:grid;place-items:center;background:#333;color:#fff;border-radius:50%;height:45px;width:45px;font-size:13px;font-weight:700}
+.staff-card strong{font-size:12px;display:block}.staff-card small{font-size:10px;display:block}
+@media(max-width:1000px){.theatre-story{padding:55px 22px 15px 0;min-height:0}.theatre-story p{font-size:20px}.carpark-layout{grid-template-columns:1fr 180px;gap:18px}}
+@media(max-width:700px){.theatre-story{padding:35px 22px}.theatre-story h2{font-size:21px}.theatre-story p{font-size:17px}.feature{padding-top:20px}.carpark-layout{grid-template-columns:1fr}.carpark-layout .plan{width:min(300px,100%)}.next-story h2{font-size:78px}}
+
+/* v5: fixed site-wide bottom bar and balanced news story spacing */
+:root{--footer-height:145px}
+body{padding-bottom:var(--footer-height)}
+footer{position:fixed;left:0;right:0;bottom:0;z-index:8;height:var(--footer-height);background:#000;display:flex;align-items:flex-end;justify-content:flex-end;padding:0 7% 35px}
+.theatre-story{min-height:0;padding-bottom:66px}
+.feature{min-height:0;padding-top:0;padding-bottom:72px;display:flow-root;overflow:visible}
+.feature::after{content:"";display:block;clear:both}
+.next-story{padding-top:0;padding-bottom:65px}
+@media(max-width:1000px){.theatre-story{padding-bottom:52px}.feature{padding-bottom:58px}}
+@media(max-width:700px){:root{--footer-height:90px}footer{height:var(--footer-height);padding-bottom:20px}.theatre-story{padding-bottom:42px}.feature{min-height:720px;padding-top:0;padding-bottom:45px}.next-story{padding-bottom:50px}}
+
+/* v6 original supplied graphics and plan interaction */
+.body-shell{background-image:linear-gradient(rgba(0,0,0,.19),rgba(0,0,0,.19)),url('assets/architecture.png');background-repeat:repeat-y;background-size:100% auto}
+.logo{width:235px;height:88px}.logo img{width:235px;height:88px;object-fit:contain}
+.mini-brand{width:198px;height:105px}.mini-brand img{width:198px;max-height:105px;object-fit:contain;object-position:left center}
+.feature{isolation:isolate}.feature-copy{z-index:2}.sheena{z-index:1;object-fit:contain;aspect-ratio:auto;width:37%;height:440px;right:9%;top:28px;object-position:center bottom}
+.feature:before{content:"";position:absolute;z-index:0;right:6%;top:50px;width:41%;aspect-ratio:1;border-radius:50%;background:#c90000}
+.staff-avatar{object-fit:cover;object-position:center 18%;background:#aaa;flex:none;width:47px;height:47px}
+.plan-button{position:relative;background:none;border:0;padding:0;cursor:zoom-in;color:#fff;align-self:start;text-align:center}.plan-button .plan{width:100%;display:block}.plan-button span{display:block;font:12px Inter,Arial,sans-serif;margin-top:6px}.plan-button:hover{filter:brightness(1.12)}
+.plan-lightbox{position:fixed;inset:0;background:rgba(0,0,0,.92);z-index:30;display:flex;align-items:center;justify-content:center;padding:65px 35px}.plan-lightbox[hidden]{display:none}.plan-lightbox img{max-width:100%;max-height:100%;object-fit:contain;background:#fff}.plan-close{position:absolute;top:16px;right:28px;font-size:46px;color:#fff;border:0;background:transparent;cursor:pointer}
+@media(max-width:700px){.logo,.logo img{width:155px;height:58px}.mini-brand,.mini-brand img{width:140px;height:80px}.sheena{width:75%;height:360px;right:0;top:auto;bottom:0}.feature:before{width:76%;top:auto;bottom:35px;right:-10%}.plan-lightbox{padding:65px 12px}}
+
+.contact-main{min-height:590px;padding:135px 4% 80px 2%;display:flex;flex-direction:column;gap:65px}.contact-method{display:flex;align-items:center;gap:80px;color:#fff;text-decoration:none;font-size:clamp(32px,4.3vw,68px);white-space:nowrap}.contact-method svg{width:150px;height:130px;fill:none;stroke:currentColor;stroke-width:1;flex:none}.contact-method:hover{color:#d20a0a}@media(max-width:900px){.contact-method{gap:20px;font-size:clamp(20px,4vw,42px)}.contact-method svg{width:90px;height:80px}}@media(max-width:700px){.contact-main{min-height:500px;padding:85px 20px;gap:45px}.contact-method{gap:15px;font-size:clamp(18px,5vw,30px)}.contact-method svg{width:60px;height:55px}}
+
+/* v7: reference-accurate positioning for the two Latest News sections */
+@media (min-width:1001px){
+  .feature{min-height:520px;padding-top:0;padding-bottom:52px;overflow:visible;isolation:isolate}
+  .feature-copy{width:59%;max-width:680px;position:relative;z-index:3}
+  .mini-brand{width:200px;height:112px;display:flex;align-items:flex-start}
+  .mini-brand img{width:200px;height:auto;max-height:none;object-fit:contain;object-position:left top}
+  .feature h1{margin-top:3px;font-size:84px}
+  .feature .red-rule{width:calc(100% + 135px);position:relative;z-index:1}
+  .feature:before{width:min(38.5vw,480px);height:min(38.5vw,480px);aspect-ratio:1;top:16px;right:7.7%;border-radius:50%;z-index:0}
+  .sheena{width:340px;height:430px;max-width:none;right:calc(7.7% + 70px);top:76px;object-fit:contain;object-position:center bottom;z-index:2;opacity:1}
+  .next-story{padding-right:3%;padding-bottom:75px}
+  .next-story h2{margin-bottom:18px;line-height:1;letter-spacing:13px}
+  .carpark-layout{grid-template-columns:minmax(0,1fr) minmax(360px,40%);gap:32px;align-items:start}
+  .carpark-copy p{font-size:25px;line-height:1.45;max-width:750px}
+  .plan-button{margin-top:6px;width:100%;display:block}
+  .plan-button .plan{width:100%;height:auto;aspect-ratio:1.42;object-fit:contain;object-position:center center;background:#fff;margin:0}
+  .staff-card{margin-top:0}
+}
+@media(min-width:1001px) and (max-width:1350px){
+  .feature:before{width:390px;height:390px;right:3%}
+  .sheena{width:285px;height:370px;right:calc(3% + 55px);top:45px}
+  .feature-copy{width:64%}
+  .carpark-layout{grid-template-columns:minmax(0,1fr) 37%;gap:22px}
+  .carpark-copy p{font-size:21px}
+}
+@media(max-width:1000px){
+  .feature:before{right:0;top:45px;width:43%;height:auto;aspect-ratio:1}
+  .sheena{right:5%;top:70px;width:34%;height:360px;object-fit:contain;opacity:1}
+  .carpark-layout{grid-template-columns:minmax(0,1fr) 40%;gap:22px}
+  .carpark-layout .plan{width:100%;height:auto;object-fit:contain}
+}
+@media(max-width:700px){
+  .feature{min-height:790px;overflow:hidden}
+  .feature-copy{width:100%;z-index:3}
+  .feature:before{width:78%;height:auto;top:auto;bottom:12px;right:-8%}
+  .sheena{width:62%;height:350px;top:auto;bottom:12px;right:6%;object-position:center bottom}
+  .feature .red-rule{width:100%}
+  .carpark-layout{grid-template-columns:1fr}
+  .plan-button{width:100%;max-width:480px}
+  .carpark-layout .plan{width:100%;height:auto}
+}
+
+/* v8: artwork composition aligned to supplied reference screenshots */
+.feature::before{display:none!important}
+.feature{isolation:isolate;overflow:visible}
+.sheena-circle{position:absolute;right:3.5%;top:12px;width:clamp(390px,38vw,490px);height:clamp(390px,38vw,490px);border-radius:50%;background:#c90000;overflow:hidden;z-index:2}
+.sheena-circle .sheena{position:absolute!important;display:block;max-width:none!important;width:74%!important;height:auto!important;aspect-ratio:auto!important;top:12%!important;bottom:auto!important;right:13%!important;object-fit:initial!important;opacity:1!important}
+@media(min-width:1001px){
+ .feature{min-height:545px;padding-bottom:48px}
+ .feature-copy{z-index:3}
+ .next-story{padding-right:7.5%}
+ .carpark-layout{grid-template-columns:minmax(0,1fr) 37%;gap:26px}
+ .plan-button{margin-top:6px}
+ .plan-button .plan{aspect-ratio:auto;height:auto;object-fit:contain}
+}
+@media(min-width:1001px) and (max-width:1350px){
+ .sheena-circle{width:390px;height:390px;right:2%;top:12px}
+ .feature{min-height:470px}
+ .carpark-layout{grid-template-columns:minmax(0,1fr) 36%;gap:20px}
+}
+@media(min-width:701px) and (max-width:1000px){
+ .sheena-circle{width:38vw;height:38vw;right:1%;top:25px}
+ .feature{min-height:460px}
+ .feature-copy{width:63%}
+ .carpark-layout{grid-template-columns:minmax(0,1fr) 36%}
+}
+@media(max-width:700px){
+ .feature{min-height:760px;overflow:hidden}
+ .sheena-circle{width:min(85vw,390px);height:min(85vw,390px);right:-4%;top:auto;bottom:24px}
+ .sheena-circle .sheena{width:74%!important;right:13%!important;top:12%!important}
+ .next-story{padding-right:22px}
+ .carpark-layout{grid-template-columns:1fr}
+}
+
+/* v9: correct proportions against supplied 16:9 reference */
+@media(min-width:1001px){
+ .feature{min-height:600px}
+ .sheena-circle{width:clamp(490px,40vw,585px);height:clamp(490px,40vw,585px);right:2.5%;top:4px}
+ .sheena-circle .sheena{width:74%!important;right:13%!important;top:12%!important}
+ .mini-brand{width:220px;height:123px}
+ .mini-brand img{width:220px;max-height:none}
+}
+@media(min-width:1001px) and (max-width:1350px){
+ .feature{min-height:550px}
+ .sheena-circle{width:clamp(420px,40vw,510px);height:clamp(420px,40vw,510px);right:1.5%;top:8px}
+}
+@media(min-width:701px) and (max-width:1000px){
+ .sheena-circle{width:43vw;height:43vw}
+ .feature{min-height:490px}
+}
+
+/* v10: align to supplied Meet Sheena reference and hold one background still */
+.body-shell {
+  background-image: linear-gradient(rgba(0,0,0,.23),rgba(0,0,0,.23)), url('assets/architecture.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+}
+@media (min-width:1001px) {
+  .feature { min-height: 540px; padding-bottom: 58px; }
+  .feature-copy { width: min(680px, 55%); max-width: none; }
+  .feature .red-rule { width: 100%; z-index: 1; }
+  .sheena-circle {
+    width: clamp(385px,29.15vw,500px);
+    height: clamp(385px,29.15vw,500px);
+    right: 7.6%;
+    top: 4px;
+    z-index: 2;
+  }
+  .sheena-circle .sheena { width: 74%!important; right: 13%!important; top: 12%!important; }
+  .next-story { padding-right: 7.5%; }
+  .carpark-layout { grid-template-columns: minmax(0,1fr) 37%; gap: 26px; }
+}
+@media (min-width:1001px) and (max-width:1350px) {
+  .feature-copy { width: 57%; }
+  .sheena-circle { right: 4%; }
+}
+@media (max-width:1000px) {
+  .body-shell { background-attachment: fixed; background-size: cover; }
+}
+
+/* v11: anchor Sheena's circle to the EXISTING rule endpoint.
+   The rule's dimensions are deliberately not changed. */
+@media (min-width:1001px) {
+  .feature .sheena-circle {
+    width: clamp(440px, 28vw, 500px);
+    height: clamp(440px, 28vw, 500px);
+    right: auto;
+    left: var(--sheena-circle-left, 55%);
+    top: var(--sheena-circle-top, 0px);
+  }
+}
+
+/* v12: plan begins level with the new car park heading and sits further left.
+   The existing Sheena circle and red rule are untouched. */
+@media (min-width:1001px) {
+  .next-story { padding-right: 5%; }
+  .carpark-layout { grid-template-columns: minmax(0, 55%) minmax(0, 40%); gap: 2%; align-items: start; }
+  .carpark-layout .plan-button { margin-top: 0; width: 100%; justify-self: start; }
+  .carpark-layout .plan-button .plan { margin-top: 0; }
+  .carpark-copy h2 { margin-top: 0; }
+}
+@media (min-width:701px) and (max-width:1000px) {
+  .carpark-layout { align-items: start; }
+  .carpark-layout .plan-button, .carpark-layout .plan { margin-top: 0; }
+}
+
+/* v13: move the car park plan substantially left without changing its
+   size, vertical position, Sheena's circle, or the red rule. */
+@media (min-width:1001px) {
+  #car-park .plan-button {
+    transform: translateX(calc(-1 * clamp(95px, 9vw, 150px)));
+  }
+}
+
+/* Consistent architectural backdrop across every page.
+   Size and crop are calculated from the viewport, never content height. */
+html { background:#090909; }
+body {
+  background-color:#090909;
+  background-image:linear-gradient(rgba(0,0,0,.23),rgba(0,0,0,.23)),url('assets/architecture.png');
+  background-position:center center;
+  background-repeat:no-repeat;
+  background-size:cover;
+  background-attachment:fixed;
+}
+body .body-shell, body.people-page .body-shell {
+  background:transparent !important;
+}
+
+/* Version 17: latest news car park content follows reading order. */
+#car-park .carpark-layout{display:block !important;}
+#car-park .carpark-copy{width:100%;max-width:850px;}
+#car-park .plan-button{display:block !important;position:relative !important;width:min(100%,680px) !important;max-width:100% !important;margin:12px 0 28px !important;text-align:left !important;}
+#car-park .plan-button .plan{display:block;width:100% !important;height:auto !important;aspect-ratio:auto !important;object-fit:contain !important;margin:0 !important;}
+#car-park .plan-button span{display:block;margin-top:8px;text-align:center;}
+#car-park .staff-card{display:inline-flex;margin:0 0 20px !important;}
+
+/* Version 18: align the car park plan's left edge with the story text
+   and Lesley Randum's profile card; cancel the earlier horizontal offset. */
+#car-park .plan-button {
+  transform: none !important;
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+  justify-self: start !important;
+}
+
+
+/* Version 21: single viewport-anchored architectural background.
+   Keep all page content and approved page-specific styles intact. */
+html { background:#090909; scrollbar-gutter:stable; }
+body:not(.home-page) {
+  background:#090909 !important;
+  background-image:none !important;
+}
+body:not(.home-page)::before {
+  content:"";
+  position:fixed;
+  inset:0;
+  z-index:0;
+  pointer-events:none;
+  background-image:linear-gradient(rgba(0,0,0,.23),rgba(0,0,0,.23)),url('assets/architecture.png');
+  background-position:center center;
+  background-repeat:no-repeat;
+  background-size:cover;
+}
+body:not(.home-page) > .body-shell {
+  position:relative;
+  z-index:1;
+  background:transparent !important;
+  background-image:none !important;
+}
+body:not(.home-page) > .topbar {
+  position:sticky;
+  top:0;
+  z-index:20;
+  background:#000;
+}
+body:not(.home-page) > footer {
+  position:fixed;
+  z-index:20;
+  left:0;
+  right:0;
+  bottom:0;
+  background:#000;
+}
+/* Menu scrolls inside its normal page layout, without moving the backdrop. */
+body:not(.home-page) .nav {background:transparent;}
+@media(max-width:700px) {
+  html { scrollbar-gutter:auto; }
+  body:not(.home-page)::before { background-size:cover; background-position:center center; }
+}
+
+/* Version 26: clickable Lesley contact card */
+a.staff-card{text-decoration:none;cursor:pointer;}a.staff-card:hover,a.staff-card:focus-visible{outline:2px solid #c90000;outline-offset:3px;}
+
+button.contact-method{border:0;background:none;font-family:inherit;cursor:pointer;text-align:left;width:100%;padding:0;}

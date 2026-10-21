@@ -1,0 +1,29 @@
+/* About Us reference composition, scoped so approved pages are unaffected */
+.about-page .body-shell{grid-template-columns:34% minmax(0,1fr);min-height:590px;background:#070707 url('assets/architecture.png') center top / cover no-repeat;background-attachment:fixed}
+.about-page .nav{padding:41px 0 25px 40px}
+.about-page .nav nav{gap:35px}
+.about-page .nav a{font-size:30px;line-height:1.35}
+.about-main{padding:53px 5.4% 55px 0}
+.about-main h1{font-size:clamp(24px,1.95vw,34px);line-height:1.35;font-weight:400;margin:0 0 21px;white-space:nowrap;letter-spacing:-.55px}
+.about-main h1 strong{color:#c90000;font-weight:750;margin-left:8px}
+.about-main p{font-size:clamp(21px,1.84vw,31px);line-height:1.27;font-weight:400;letter-spacing:-.55px;margin:0 0 26px;max-width:1000px}
+@media(max-width:1250px){.about-page .body-shell{grid-template-columns:30% minmax(0,1fr)}.about-main{padding-right:4%}.about-main h1{white-space:normal}.about-page .nav a{font-size:26px}}
+@media(max-width:700px){.about-page .body-shell{display:block;min-height:calc(100vh - 195px);background-size:cover;background-attachment:scroll}.about-page .nav{display:none;padding:22px 24px}.about-page .nav.open{display:block}.about-page .nav nav{gap:16px}.about-page .nav a{font-size:22px}.about-main{padding:36px 24px 60px}.about-main h1{font-size:27px}.about-main h1 strong{margin-left:0}.about-main p{font-size:20px;line-height:1.45;margin-bottom:24px}}
+
+/* v19: Extend the architectural background through the full visible content area.
+   Keep the fixed header/footer and all other pages unchanged. */
+.about-page .body-shell{
+  min-height:calc(100vh - 163px - var(--footer-height, 145px));
+  background-image:linear-gradient(rgba(0,0,0,.23),rgba(0,0,0,.23)),url('assets/architecture.png');
+  background-position:center center;
+  background-size:cover;
+  background-repeat:no-repeat;
+  background-attachment:fixed;
+}
+@media(max-width:700px){
+  .about-page .body-shell{
+    min-height:calc(100vh - 105px - var(--footer-height, 90px));
+    background-attachment:fixed;
+    background-size:cover;
+  }
+}

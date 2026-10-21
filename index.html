@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Forge Building Team</title>
+<style>
+html,body{margin:0;width:100%;height:100%;overflow:hidden;background:#000}
+.site-frame{position:fixed;inset:0;width:100%;height:100%;border:0;background:#000;opacity:0;transition:opacity 380ms ease-in-out;pointer-events:none}
+.site-frame.active{opacity:1;pointer-events:auto}
+.site-frame.entering{opacity:1;pointer-events:none}
+@media(prefers-reduced-motion:reduce){.site-frame{transition:none}}
+</style></head><body>
+<script>
+(function(){
+'use strict';
+var allowed=/^(?:home|about|people|services|projects|news|careers|contact|client-portal|intogram|linkedout)\.html$/;
+function normalise(page){var parts=String(page||'').split('#');var path=parts[0]==='index.html'?'home.html':parts[0];return (allowed.test(path)?path:'home.html')+(allowed.test(path)&&parts.length>1?'#'+parts.slice(1).join('#'):'')}
+var params=new URLSearchParams(location.search);
+var current=normalise(params.get('page')||'home.html');
+var active=null,pending=null,sequence=0;
+function createFrame(page){var f=document.createElement('iframe');f.className='site-frame';f.title='FBT website';f.src=page;document.body.appendChild(f);return f}
+function navigate(requested,push){
+ var page=normalise(requested);
+ if(page===current && active)return;
+ var ticket=++sequence;
+ if(pending){pending.remove();pending=null}
+ var incoming=createFrame(page);pending=incoming;
+ incoming.addEventListener('load',function(){
+   if(ticket!==sequence)return;
+   requestAnimationFrame(function(){requestAnimationFrame(function(){
+      if(ticket!==sequence)return;
+      incoming.classList.add('entering');
+      if(active)active.classList.remove('active');
+      var old=active;active=incoming;pending=null;current=page;
+      if(push)history.pushState({page:page},'',page==='home.html'?'index.html':'index.html?page='+encodeURIComponent(page));
+      setTimeout(function(){if(old&&old!==active)old.remove();incoming.classList.remove('entering');incoming.classList.add('active')},410);
+   })});
+ });
+}
+window.addEventListener('message',function(e){
+ if(!Array.from(document.querySelectorAll('iframe')).some(function(f){return f.contentWindow===e.source}))return;
+ if(e.data&&e.data.type==='fbt-navigate')navigate(e.data.page,true);
+ if(e.data&&e.data.type==='fbt-title'&&e.source===active?.contentWindow)document.title=e.data.title;
+});
+window.addEventListener('popstate',function(){navigate(new URLSearchParams(location.search).get('page')||'home.html',false)});
+active=createFrame(current);active.addEventListener('load',function(){active.classList.add('active')});
+})();
+</script></body></html>

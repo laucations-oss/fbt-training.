@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;500&family=Inter:wght@400;500;600;700&display=swap');
+body.people-page{height:100vh;overflow:hidden;padding-bottom:0}.people-page .topbar{height:18.2vh;min-height:110px}.people-page .body-shell{height:66.1vh;min-height:450px;min-height:0;grid-template-columns:19.7% 80.3%;background:#111 url('assets/architecture.png') center center/cover no-repeat}.people-page .nav{padding-top:40px}.people-page .nav nav{gap:33px}.people-page .main{position:relative;min-height:0}.people-page footer{height:15.7vh;min-height:95px;padding-bottom:34px}.people-page .nav a{font-size:clamp(20px,1.85vw,31px)}.people-page .nav a.active{color:#df1010}.people-page button{cursor:pointer}.people-page .people-stage{height:100%;position:relative}.people-page .choices{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:50px;height:100%}.people-page .choices button{font:400 clamp(60px,6vw,105px)/1.3 Inter,Arial,sans-serif;white-space:nowrap;color:#fff;background:none;border:0}.people-page .choices button:hover{color:#e01414}.people-page .leader-choices{display:none;position:absolute;inset:0;align-items:center;justify-content:center;gap:100px}.people-page .leader-choices button{background:#111b;border:1px solid #fff6;border-radius:18px;color:white;font:400 clamp(32px,4vw,66px) Inter;padding:30px}.people-page .leader-choices button:hover{border-color:#c00}.people-page .lead-profile{display:none;position:absolute;inset:0;background-size:100% 100%;background-position:center}.people-page .lead-profile.zachary{background-image:url('assets/zachary-hero.png')}.people-page .lead-profile.sharon{background-image:url('assets/sharon-hero.png')}.people-page .bio-button{position:absolute;top:60%;left:32%;width:190px;height:70px;opacity:.01;border:0;background:white}.people-page .back{position:absolute;left:10px;top:9px;color:white;background:#111b;border:1px solid #fff7;padding:9px 15px;z-index:2;font-size:16px}.people-page .bio-view{display:none;position:absolute;inset:0;background:#000;overflow-y:auto;padding:0 4% 20px 0}.people-page .bio-grid{display:grid;grid-template-columns:56% 44%;gap:35px;align-items:start}.people-page .bio-grid img{width:100%;max-height:100%;object-fit:contain}.people-page .bio-copy{padding:0 20px 0 0;font-size:clamp(15px,1.23vw,21px);line-height:1.36}.people-page .bio-copy h2{font-size:clamp(24px,2vw,34px);margin:0}.people-page .bio-copy .role{margin:0 0 28px}.people-page .bio-copy p{margin:0 0 14px}.people-page .senior{display:none;height:100%;padding:17px 3% 8px 0}.people-page .senior h1{font-size:clamp(30px,2.8vw,48px);font-weight:400;margin:0 0 12px 10px}.people-page .staff-grid{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:1.45%;height:76%}.people-page .staff-card{border:0;border-radius:24px;background:#fff;color:#111;min-width:0;padding:11px 10px;display:flex;align-items:center;flex-direction:column;text-align:center;overflow:hidden}.people-page .staff-card img{width:85%;max-width:150px;aspect-ratio:1;object-fit:cover;border-radius:50%;margin-bottom:14px}.people-page .staff-card strong{font:500 clamp(15px,1.25vw,22px)/1.15 'Barlow Condensed',sans-serif;text-transform:uppercase;color:#533b30}.people-page .staff-card span{font-size:clamp(12px,1.15vw,19px);line-height:1.2;margin-top:4px}.people-page .staff-card i{width:60%;border-top:1px solid #888;margin:8px 0}.people-page .staff-card small{font-size:clamp(9px,.66vw,12px);line-height:1.42}.people-page .staff-card:hover{transform:translateY(-3px)}.people-page .lead-links{position:absolute;bottom:-90px;left:-220px;display:flex;flex-direction:column;gap:9px;font-size:18px}.people-page .lead-links a{color:#d00;text-decoration:none;font-weight:700}.people-page .lead-links span{color:white;font-weight:400}.people-page .staff-overlay{position:fixed;inset:0;background:rgba(0,0,0,.83);z-index:15;display:none;align-items:center;justify-content:center;padding:20px}.people-page .staff-overlay.open{display:flex}.people-page .staff-dialog{position:relative;background:white;color:black;border-radius:26px;width:min(625px,95vw);min-height:540px;max-height:90vh;overflow:auto;padding:70px 25px 60px}.people-page .staff-detail{display:grid;grid-template-columns:44% 1fr;gap:23px}.people-page .staff-detail>img{width:100%;height:400px;object-fit:cover}.people-page .staff-detail h3{font:500 29px 'Barlow Condensed',sans-serif;text-transform:uppercase;color:#543d31;margin:0}.people-page .staff-detail h4{font-size:23px;font-weight:400;margin:2px 0 6px}.people-page .detail-rule{border-top:1px solid #888;width:110px;margin-bottom:7px}.people-page .staff-detail p{font-size:16px;line-height:1.52;margin:0 0 10px}.people-page .contact-line{font-size:16px;display:flex;align-items:center;gap:12px;margin:4px 0;white-space:nowrap}.people-page .contact-line span{display:inline-flex;align-items:center;justify-content:center;width:30px;height:30px;background:black;color:white;font-size:23px}.people-page .contact-line a{color:#111;text-decoration:none}.people-page .social-link a{font-weight:800;color:#111;text-decoration:none;font-size:20px}.people-page .social-link span{background:#111;color:#fff}.people-page .close-dialog{position:absolute;right:15px;top:10px;background:none;border:0;font-size:30px;color:#222}.people-page .small-back{position:absolute;top:10px;right:10px;background:#000a;border:1px solid #fff8;color:white;padding:8px 12px}.people-page .stage-label{position:absolute;top:8px;left:10px;color:#fff9;font-size:14px}
+@media(max-width:1100px){.people-page .staff-grid{gap:8px}.people-page .staff-card{border-radius:12px;padding:8px 5px}.people-page .staff-card small{font-size:9px}.people-page .lead-links{left:0;bottom:-75px}}@media(max-width:700px){body.people-page{height:auto;overflow:auto}.people-page .topbar{height:105px}.people-page .body-shell{display:block;min-height:650px;height:auto}.people-page .nav{display:none}.people-page .nav.open{display:block}.people-page .people-stage{min-height:600px}.people-page .choices{min-height:600px}.people-page .choices button{font-size:40px}.people-page .staff-grid{grid-template-columns:repeat(2,1fr);height:auto}.people-page .senior{padding:20px}.people-page .staff-card{min-height:290px}.people-page .staff-card small{font-size:11px}.people-page .lead-links{position:static;margin:20px}.people-page .staff-detail{grid-template-columns:1fr}.people-page .staff-detail>img{height:250px;object-fit:contain}.people-page .staff-dialog{padding:40px 20px}.people-page .bio-grid{grid-template-columns:1fr}.people-page .lead-profile{background-size:cover}.people-page .bio-button{left:25%}.people-page footer{position:relative;height:100px}}
+.people-page .staff-detail[hidden]{display:none!important}
+
+
+/* V5: leadership artwork is the original approved complete composition.
+   No duplicated text, circles, cutouts or synthetic signatures. */
+.people-page .choices{gap:20px;justify-content:center}
+.people-page .choices .lead-choice-group{display:flex;flex-direction:column;align-items:center;gap:8px;transition:transform .35s ease}
+.people-page .choices .choice-heading{font-size:clamp(52px,5.5vw,94px);transition:color .2s ease}
+.people-page .choices .choice-heading:hover,.people-page .leader-names button:hover{color:#df1010}
+.people-page .leader-names{display:flex;flex-direction:row;gap:65px;max-height:0;opacity:0;overflow:hidden;transition:max-height .35s ease,opacity .3s ease,padding .35s ease}
+.people-page .leader-names button{font:400 clamp(22px,2vw,34px) Inter,Arial,sans-serif;background:transparent;border:0;color:white}
+.people-page .choices.expanded .leader-names{max-height:95px;opacity:1;padding:8px 0 15px}
+.people-page .choices.expanded .lead-choice-group{transform:translateY(-35px)}
+.people-page .choices .senior-choice{transition:transform .35s ease}
+.people-page .choices.expanded .senior-choice{transform:translateY(-35px)}
+.people-page .lead-profile{background-color:#000!important;background-size:100% 100%;background-repeat:no-repeat;overflow:hidden}
+.people-page .lead-profile.zachary{background-image:url('assets/zachary-hero.png')!important}
+.people-page .lead-profile.sharon{background-image:url('assets/sharon-hero.png')!important}
+.people-page .hero-red-disc,.people-page .leader-hero-copy h1,.people-page .leader-hero-copy p,.people-page .hero-rule,.people-page .leader-cutout,.people-page .hero-signature{display:none!important}
+.people-page .leader-hero-copy{position:absolute;inset:0;max-width:none;pointer-events:none;z-index:3}
+.people-page .bio-button{position:absolute;left:24%;top:56%;width:22%;height:12%;opacity:0;background:transparent;border:0;pointer-events:auto;cursor:pointer}
+.people-page .bio-button:focus-visible{opacity:1;outline:3px solid white;outline-offset:2px}
+.people-page .back{z-index:5;left:10px;top:9px}
+.people-page .staff-card img{width:clamp(90px,8.4vw,150px);height:clamp(90px,8.4vw,150px);max-width:none;object-fit:cover;object-position:center 20%;border-radius:50%;background:#bbb;flex-shrink:0}
+.people-page .staff-card small{font-size:clamp(12px,.9vw,16px);line-height:1.32;display:block;flex:0 1 auto;margin-top:10px}
+.people-page .staff-card{justify-content:flex-start;padding:12px 10px 16px}
+.people-page .staff-card strong{font-size:clamp(17px,1.35vw,24px)}
+.people-page .staff-card span{font-size:clamp(14px,1.15vw,20px)}
+.people-page .staff-dialog{width:min(720px,94vw);min-height:0;padding:45px 30px}
+.people-page .staff-detail{grid-template-columns:42% minmax(0,1fr);align-items:start;gap:22px}
+.people-page .staff-detail>img{width:100%;height:400px;object-fit:cover;object-position:center 20%;max-width:100%;display:block}
+.people-page .staff-detail p{font-size:16px;line-height:1.42}
+.people-page .contact-line{white-space:normal;overflow-wrap:anywhere}
+.people-page .contact-icon{width:32px!important;height:32px!important;min-width:32px!important;background:#000!important;display:inline-flex!important;align-items:center!important;justify-content:center!important}
+.people-page .contact-icon svg{width:24px;height:24px;fill:none;stroke:white;stroke-width:1.5;stroke-linecap:round;stroke-linejoin:round}
+.people-page .social-icon-link{display:inline-flex;align-items:center;gap:6px}
+.people-page .social-icon-link svg{width:30px;height:30px;fill:none;stroke:currentColor;stroke-width:2}
+@media(max-width:700px){.people-page .leader-names{gap:15px}.people-page .leader-names button{font-size:18px}.people-page .staff-detail{grid-template-columns:1fr}.people-page .staff-detail>img{height:270px}.people-page .lead-profile{background-size:100% 100%}.people-page .bio-button{left:20%;top:56%;width:30%}}
+
+/* Version 6: simulated email composer */
+.people-page .fake-email-link{border:0;padding:0;background:none;color:#111;text-align:left;font:inherit;text-decoration:none;cursor:pointer}.people-page .fake-email-link:hover{text-decoration:underline}
+.fake-mail-overlay[hidden]{display:none!important}.fake-mail-overlay{position:fixed;inset:0;background:#000b;z-index:100;display:flex;justify-content:center;align-items:center;padding:16px}.fake-mail{position:relative;width:min(600px,96vw);max-height:92vh;overflow:auto;background:#fff;color:#111;padding:26px 30px;border-radius:12px;box-shadow:0 12px 45px #0009}.fake-mail h2{margin:0 0 12px}.fake-mail-notice{background:#f1f1f1;padding:10px 12px;font-size:14px}.fake-mail label{display:block;font-size:14px;margin:15px 0}.fake-mail input,.fake-mail textarea{box-sizing:border-box;display:block;width:100%;margin-top:5px;padding:10px;border:1px solid #aaa;border-radius:3px;font:16px Arial,sans-serif}.fake-mail-actions{display:flex;justify-content:flex-end;gap:12px}.fake-mail-actions button{padding:10px 14px;border:1px solid #aaa;border-radius:5px}.fake-mail-close{position:absolute;right:16px;top:10px;border:0;background:none;font-size:28px}.fake-mail #fake-mail-status{font-size:14px}
+
+/* v7: render genuine layered profiles instead of compressed flattened screenshots */
+.people-page .lead-profile,.people-page .lead-profile.zachary,.people-page .lead-profile.sharon{background:#000!important;background-image:none!important;isolation:isolate;overflow:hidden}
+.people-page .lead-profile .hero-red-disc{display:block!important;position:absolute;width:80%;aspect-ratio:1;border-radius:50%;background:#c90000;top:12%;right:-16%;z-index:0}
+.people-page .lead-profile .leader-hero-copy{position:absolute;top:19%;left:4%;width:57%;z-index:2}
+.people-page .lead-profile .leader-hero-copy h1{display:block!important;color:white;font:400 clamp(64px,8.5vw,170px)/.98 'Barlow Condensed','Arial Narrow',Arial,sans-serif;margin:0;white-space:nowrap;letter-spacing:-.025em}
+.people-page .lead-profile .leader-hero-copy p{display:block!important;font:400 clamp(30px,3.6vw,70px)/1.12 Arial,sans-serif;color:#d30000;margin:22px 0 0;white-space:nowrap}
+.people-page .lead-profile .hero-rule{display:block!important;position:absolute;top:64%;left:4%;width:92%;height:2px;background:#fff;z-index:1}
+.people-page .lead-profile .leader-cutout{display:block!important;position:absolute;right:0;bottom:0;height:98%;width:auto;max-width:58%;object-fit:contain;object-position:bottom right;opacity:1!important;filter:none!important;mix-blend-mode:normal!important;z-index:3}
+.people-page .lead-profile.sharon .leader-cutout{height:96%;right:2%}
+.people-page .lead-profile .hero-signature-image{position:absolute;display:block;left:10%;bottom:4%;width:52%;height:27%;object-fit:contain;object-position:center;z-index:4;pointer-events:none}
+.people-page .lead-profile .bio-button{position:relative;display:block;top:auto;left:auto;width:auto;height:auto;opacity:1!important;padding:0;margin:12px 0 0 34%;color:white;background:transparent;border:0;font:400 clamp(16px,1.5vw,25px) Arial,sans-serif;white-space:nowrap;z-index:5}
+.people-page .lead-profile .bio-button span{font-size:1.15em}.people-page .lead-profile .bio-button:hover{color:#ff3838}.people-page .lead-profile .back{z-index:8}
+@media(max-width:700px){.people-page .lead-profile .leader-hero-copy{top:16%;left:5%;width:90%}.people-page .lead-profile .leader-hero-copy h1{font-size:clamp(45px,10vw,75px)}.people-page .lead-profile .leader-hero-copy p{font-size:clamp(22px,5vw,36px)}.people-page .lead-profile .leader-cutout{height:67%;max-width:92%;right:0}.people-page .lead-profile.sharon .leader-cutout{height:66%}.people-page .lead-profile .hero-red-disc{width:125%;right:-55%;top:35%}.people-page .lead-profile .hero-rule{top:68%}.people-page .lead-profile .hero-signature-image{width:66%;left:2%;bottom:3%}.people-page .lead-profile .bio-button{margin-left:20%}}
+
+/* V8 final supplied artwork. The only overlaid content is the clickable hotspot. */
+body.people-page .main:has(.final-artwork[style*="block"]) { margin-left:-24.53%;width:124.53%;z-index:4; }
+body.people-page .lead-profile.final-artwork { position:absolute;inset:0;display:none;background:#000 !important;background-image:none !important;overflow:hidden; }
+body.people-page .lead-profile.final-artwork .artwork-frame { position:absolute;inset:0;margin:auto;width:min(100%, 177.7778vh);height:100%;max-width:100%;aspect-ratio:16 / 9; }
+body.people-page .lead-profile.final-artwork .artwork-image { display:block;width:100%;height:100%;object-fit:contain;opacity:1 !important;filter:none !important;mix-blend-mode:normal !important; }
+body.people-page .lead-profile.final-artwork .artwork-biography { position:absolute;left:22.0%;top:45.0%;width:10%;height:5.2%;background:transparent !important;border:0 !important;opacity:1 !important;z-index:7;cursor:pointer;padding:0; }
+body.people-page .lead-profile.final-artwork .artwork-biography:focus-visible { outline:2px solid #fff;outline-offset:4px; }
+body.people-page .lead-profile.final-artwork .back { z-index:9; }
+@media(max-width:700px) {body.people-page .main:has(.final-artwork[style*="block"]) { margin-left:0;width:100%; }body.people-page .lead-profile.final-artwork .artwork-frame { width:100%;height:auto;aspect-ratio:16/9;top:20%;bottom:auto; }body.people-page .lead-profile.final-artwork .artwork-biography {left:22%;top:45%;width:13%;height:8%;}}
+
+body.people-page .lead-profile.final-artwork .artwork-frame { width:min(100%, 117.5vh);height:auto;aspect-ratio:16/9; }
+body.people-page .lead-profile.final-artwork .artwork-image { width:100%;height:100%;object-fit:fill; }
+
+
+/* Version 9: enlarge approved artwork and retain architectural backdrop. */
+body.people-page .main:has(.final-artwork[style*="block"]) {margin-left:-24.53%;width:124.53%;z-index:4;}
+body.people-page .lead-profile.final-artwork {background:transparent !important;overflow:hidden;}
+body.people-page .lead-profile.final-artwork .artwork-frame {
+  position:absolute;left:0;top:50%;right:auto;bottom:auto;
+  transform:translateY(-50%);margin:0;
+  width:100%;height:auto;max-width:none;aspect-ratio:16/9;
+}
+body.people-page .lead-profile.final-artwork .artwork-image {
+  display:block;width:100%;height:100%;object-fit:fill;pointer-events:none;
+}
+body.people-page .lead-profile.final-artwork .artwork-biography {
+  position:absolute !important;left:21.7% !important;top:44.0% !important;
+  width:18% !important;height:6.5% !important;
+  display:block !important;z-index:100 !important;
+  background:transparent !important;border:0 !important;cursor:pointer !important;
+  pointer-events:auto !important;
+}
+body.people-page .lead-profile.final-artwork .back {z-index:110;}
+@media(max-width:700px){body.people-page .lead-profile.final-artwork .artwork-frame {width:145%;left:-20%;top:50%;}body.people-page .lead-profile.final-artwork .artwork-biography{width:19% !important;}}
+
+/* Version 10: confine artwork to the main content area, leaving navigation
+   unobstructed. Keep the entire 16:9 image visible at its natural proportions. */
+body.people-page .main:has(.final-artwork[style*="block"]) {
+  margin-left:0 !important;
+  width:100% !important;
+  z-index:1 !important;
+}
+body.people-page .lead-profile.final-artwork {
+  inset:0 !important;
+  background:transparent !important;
+  overflow:hidden !important;
+}
+body.people-page .lead-profile.final-artwork .artwork-frame {
+  position:absolute !important;
+  left:50% !important;
+  top:50% !important;
+  right:auto !important;
+  bottom:auto !important;
+  transform:translate(-50%,-50%) !important;
+  width:min(100%, 117.5vh) !important;
+  height:auto !important;
+  aspect-ratio:16/9 !important;
+  margin:0 !important;
+  max-width:100% !important;
+}
+body.people-page .lead-profile.final-artwork .artwork-image {
+  width:100% !important;
+  height:100% !important;
+  object-fit:contain !important;
+  pointer-events:none !important;
+}
+body.people-page .lead-profile.final-artwork .artwork-biography {
+  position:absolute !important;
+  left:27% !important;
+  top:55% !important;
+  width:16% !important;
+  height:9% !important;
+  z-index:999 !important;
+  display:block !important;
+  cursor:pointer !important;
+  pointer-events:auto !important;
+  background:transparent !important;
+}
+body.people-page .lead-profile.final-artwork .back { z-index:1000 !important; }
+@media(max-width:700px) {
+ body.people-page .lead-profile.final-artwork .artwork-frame {
+   width:100% !important; left:50% !important;top:50% !important;
+ }
+}
+
+/* Version 11: modest enlargement without entering the navigation column. */
+body.people-page .lead-profile.final-artwork .artwork-frame {
+  width:min(100%, 127vh) !important;
+}
+
+/* Match the same fixed, viewport-sized architecture on People pages. */
+body.people-page .body-shell {background:transparent !important;}
+
+/* Version 27: unobtrusive contact-details prompt on each senior team card */
+.people-page .senior .staff-grid .staff-card::after{content:"Click to view contact details";display:block;margin-top:auto;padding:14px 3px 3px;color:#bd1010;font:600 clamp(11px,.85vw,15px)/1.25 Inter,Arial,sans-serif;letter-spacing:.01em;}
+.people-page .senior .staff-grid .staff-card:hover::after,.people-page .senior .staff-grid .staff-card:focus-visible::after{text-decoration:underline;}
+@media(max-width:700px){.people-page .senior .staff-grid .staff-card::after{font-size:12px;padding-top:12px;}}

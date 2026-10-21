@@ -1,0 +1,72 @@
+/* Site frame overrides: same viewport crop on every content page. */
+
+
+/* Version 21: single viewport-anchored architectural background.
+   Keep all page content and approved page-specific styles intact. */
+html { background:#090909; scrollbar-gutter:stable; }
+body:not(.home-page) {
+  background:#090909 !important;
+  background-image:none !important;
+}
+body:not(.home-page)::before {
+  content:"";
+  position:fixed;
+  inset:0;
+  z-index:0;
+  pointer-events:none;
+  background-image:linear-gradient(rgba(0,0,0,.23),rgba(0,0,0,.23)),url('assets/architecture.png');
+  background-position:center center;
+  background-repeat:no-repeat;
+  background-size:cover;
+}
+body:not(.home-page) > .body-shell {
+  position:relative;
+  z-index:1;
+  background:transparent !important;
+  background-image:none !important;
+}
+body:not(.home-page) > .topbar {
+  position:sticky;
+  top:0;
+  z-index:20;
+  background:#000;
+}
+body:not(.home-page) > footer {
+  position:fixed;
+  z-index:20;
+  left:0;
+  right:0;
+  bottom:0;
+  background:#000;
+}
+/* Menu scrolls inside its normal page layout, without moving the backdrop. */
+body:not(.home-page) .nav {background:transparent;}
+@media(max-width:700px) {
+  html { scrollbar-gutter:auto; }
+  body:not(.home-page)::before { background-size:cover; background-position:center center; }
+}
+
+/* Version 22: seamless navigation between ordinary website pages.
+   Browsers supporting cross-document View Transitions retain the shared
+   frame while gently replacing the content. Older browsers fall back safely. */
+@view-transition { navigation: auto; }
+html { scrollbar-gutter: stable; }
+body:not(.home-page)::before { view-transition-name: fbt-background; }
+body:not(.home-page) > .topbar { view-transition-name: fbt-header; }
+body:not(.home-page) > footer { view-transition-name: fbt-footer; }
+body:not(.home-page) > .body-shell > .nav { view-transition-name: fbt-navigation; }
+body:not(.home-page) > .body-shell > .main { view-transition-name: fbt-content; }
+@keyframes fbt-fade-in { from { opacity: 0; } to { opacity: 1; } }
+@keyframes fbt-fade-out { from { opacity: 1; } to { opacity: 0; } }
+::view-transition-old(fbt-background), ::view-transition-new(fbt-background),
+::view-transition-old(fbt-header), ::view-transition-new(fbt-header),
+::view-transition-old(fbt-footer), ::view-transition-new(fbt-footer),
+::view-transition-old(fbt-navigation), ::view-transition-new(fbt-navigation) {
+  animation-duration: 0s;
+}
+::view-transition-old(fbt-content) { animation: 110ms ease-out both fbt-fade-out; }
+::view-transition-new(fbt-content) { animation: 180ms ease-in both fbt-fade-in; }
+@media (prefers-reduced-motion: reduce) {
+  ::view-transition-old(*), ::view-transition-new(*) { animation-duration: 0.01ms !important; }
+}
+

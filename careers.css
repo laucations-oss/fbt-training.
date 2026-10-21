@@ -1,0 +1,18 @@
+/* Apprenticeship Open Day page, matching supplied visual reference */
+.careers-main{padding:36px 6.5% 105px 0;min-height:590px;color:#fff;font-family:Inter,Arial,sans-serif;font-size:clamp(17px,1.52vw,25px);line-height:1.4}
+.careers-heading{display:flex;align-items:baseline;justify-content:space-between;gap:24px;flex-wrap:wrap}
+.careers-heading h1{font-size:clamp(18px,1.42vw,24px);font-weight:800;line-height:1.25;margin:0}
+.careers-heading span{font-size:clamp(17px,1.42vw,24px);color:#e01a1a;white-space:nowrap}
+.careers-rule{height:3px;background:#cf1111;width:min(470px,100%);margin:9px 0 12px}
+.careers-main h2{font-size:inherit;font-weight:600;margin:0 0 14px}
+.careers-main p{margin:0 0 18px}
+.careers-main h3{font-size:clamp(16px,1.3vw,21px);font-weight:800;margin:20px 0 8px}
+.careers-main ul{padding-left:42px;margin:0 0 26px}
+.careers-main li{padding-left:0;margin:0}
+.careers-event p{margin:0}
+/* Keep white lettering legible on the shared architectural photograph */
+.careers-main{text-shadow:0 1px 5px rgba(0,0,0,.8)}
+@media(max-width:1050px){.careers-main{padding:35px 5% 105px 12px}.careers-heading{gap:8px}}
+@media(max-width:700px){.careers-main{padding:32px 22px 105px;font-size:18px;line-height:1.5}.careers-heading{display:block}.careers-heading h1{font-size:21px}.careers-heading span{display:block;margin-top:12px;font-size:18px}.careers-main h2{margin-top:12px}.careers-main ul{padding-left:25px}}
+
+.careers-register{margin-top:28px!important;font-weight:600}.sim-compose-link{border:0;background:none;padding:0;color:#fff;text-decoration:underline;text-underline-offset:4px;font:inherit;cursor:pointer}.sim-compose-link:hover{color:#e01a1a}
