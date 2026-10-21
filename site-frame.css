@@ -49,7 +49,7 @@ body:not(.home-page) .nav {background:transparent;}
 /* Version 22: seamless navigation between ordinary website pages.
    Browsers supporting cross-document View Transitions retain the shared
    frame while gently replacing the content. Older browsers fall back safely. */
-@view-transition { navigation: auto; }
+@view-transition { navigation: none; }
 html { scrollbar-gutter: stable; }
 body:not(.home-page)::before { view-transition-name: fbt-background; }
 body:not(.home-page) > .topbar { view-transition-name: fbt-header; }
