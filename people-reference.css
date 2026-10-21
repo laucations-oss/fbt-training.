@@ -155,3 +155,58 @@ body.people-page .body-shell {background:transparent !important;}
 .people-page .senior .staff-grid .staff-card::after{content:"Click to view contact details";display:block;margin-top:auto;padding:14px 3px 3px;color:#bd1010;font:600 clamp(11px,.85vw,15px)/1.25 Inter,Arial,sans-serif;letter-spacing:.01em;}
 .people-page .senior .staff-grid .staff-card:hover::after,.people-page .senior .staff-grid .staff-card:focus-visible::after{text-decoration:underline;}
 @media(max-width:700px){.people-page .senior .staff-grid .staff-card::after{font-size:12px;padding-top:12px;}}
+
+/* Fix Senior Team cards and page scrolling */
+
+body.people-page {
+  height: auto !important;
+  min-height: 100vh;
+  overflow-y: auto !important;
+  overflow-x: hidden;
+}
+
+.people-page .body-shell {
+  height: auto !important;
+  min-height: 66.1vh;
+}
+
+.people-page .main {
+  min-height: 66.1vh;
+}
+
+.people-page .people-stage:has(.senior[style*="block"]) {
+  height: auto !important;
+  min-height: 66.1vh;
+}
+
+.people-page .senior[style*="block"] {
+  height: auto !important;
+  min-height: 66.1vh;
+  padding-bottom: 40px;
+}
+
+.people-page .senior .staff-grid {
+  height: auto !important;
+  align-items: stretch;
+}
+
+.people-page .senior .staff-card {
+  height: auto !important;
+  min-height: 540px;
+  overflow: visible !important;
+}
+
+.people-page .senior .staff-card::after {
+  margin-top: auto;
+  padding-top: 20px;
+}
+
+@media (max-width: 700px) {
+  .people-page .senior .staff-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .people-page .senior .staff-card {
+    min-height: 420px;
+  }
+}
